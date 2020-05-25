@@ -70,4 +70,9 @@ form {
     font-weight: 600;
     padding: 20px;
     background-color: #f1faee;
+    display: flex;
+}
+
+.task li {
+    flex: 1;
 }
