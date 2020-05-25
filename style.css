@@ -64,7 +64,7 @@ form {
 
 .btn:hover {
     background-color: #e63946;
-    color: #f1faee;
+    color: white;
 }
 
 .burn-btn {
@@ -110,6 +110,7 @@ form {
     color: #e63946;
     font-weight: 600;
     padding: 5px;
+    background-color: white;
     display: flex;
     align-items: center;
     border-radius: 5rem;
@@ -153,7 +154,7 @@ form {
         height: 3.5rem;
         border-radius: 50%;
         background-color: #e63946;
-        color: #f1faee;
+        color: white;
     }
 
     .todo-btn:focus {
