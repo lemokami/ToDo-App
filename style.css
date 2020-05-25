@@ -164,13 +164,4 @@ form {
         background-color: #e63946;
         color: white;
     }
-
-    .check:hover {
-        background-color: white;
-    }
-
-    .check:focus {
-        background-color: #06d65d;
-    }
-
 }
