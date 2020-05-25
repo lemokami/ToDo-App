@@ -155,4 +155,8 @@ form {
         background-color: #e63946;
         color: #f1faee;
     }
+
+    .todo-btn:focus {
+        outline: none;
+    }
 }
