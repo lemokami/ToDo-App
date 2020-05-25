@@ -47,7 +47,7 @@ form {
     color: #e63946;
     font-weight: 600;
     border-radius: 2rem;
-    width: 35rem;
+    width: 20rem;
     margin: 1rem;
     transition: all 0.5s ease-in;
 }
@@ -99,8 +99,10 @@ form {
 }
 
 .todo-list {
-    width: 35rem;
+    width: 45rem;
     list-style-type: none;
+    overflow: hidden;
+
 }
 
 .task {
@@ -133,11 +135,25 @@ form {
 }
 
 .delprep {
-    transform: translatex(10rem);
+    transform: translatey(15rem);
     opacity: 0;
 }
 
 .complete {
     text-decoration: line-through;
     opacity: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .burn-btn {
+        display: none;
+    }
+
+    .todo-btn {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-color: #e63946;
+        color: #f1faee;
+    }
 }
