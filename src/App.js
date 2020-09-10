@@ -37,8 +37,8 @@ function App() {
               </span>
             </div>
           )}
+          <InputBar task={task} setTask={setTask} addTask={addTask} />
         </div>
-        <InputBar task={task} setTask={setTask} addTask={addTask} />
       </div>
     </div>
   );
