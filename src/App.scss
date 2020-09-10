@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+$primary-font: "Poppins", sans-serif;
+$primary-color: #fff;
+$text-color: #1a1a1a;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-sizing: border-box;
+}
+body {
+  background: url("./assets/bg-confetti.png");
+  background-size: cover;
+  color: $text-color;
+  font-family: $primary-font;
+  font-weight: 300;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 5rem 0 1.5rem 0;
+}
+.container {
+  width: 50%;
+}
+// Search bar component
+%input-ppts {
+  border: 0;
+  border-radius: 8px;
+  height: 3.5rem;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+%input-ppts:focus() {
+  box-shadow: 0px 100px 287px rgba(0, 0, 0, 0.0201946),
+    0px 22.3363px 64.1052px rgba(0, 0, 0, 0.0298054),
+    0px 6.6501px 19.0858px rgba(0, 0, 0, 0.05);
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+#tinput {
+  @extend %input-ppts;
+  color: #878787;
+  background-color: #fafafa;
+  padding: 0 20px;
+  flex-grow: 4;
+}
+#tinput:focus() {
+  color: #000;
+}
+.add-btn {
+  @extend %input-ppts;
+  color: #000;
+  padding: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: rgba(75, 189, 121, 0.5);
+}
+
+.add-btn:hover {
+  color: #fff;
+  background-color: rgba(75, 189, 121, 1);
+  box-shadow: 0px 100px 287px rgba(0, 0, 0, 0.0201946),
+    0px 22.3363px 64.1052px rgba(0, 0, 0, 0.0298054),
+    0px 6.6501px 19.0858px rgba(0, 0, 0, 0.05);
+}
+
+// taskitem Component
+.wrapper {
+  margin-bottom: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.wrapper:hover() {
+  box-shadow: 0px 100px 287px rgba(0, 0, 0, 0.0201946),
+    0px 22.3363px 64.1052px rgba(0, 0, 0, 0.0298054),
+    0px 6.6501px 19.0858px rgba(0, 0, 0, 0.05);
+}
+.fg {
+  background-color: rgba(250, 250, 250, 0.75);
+  filter: blur(2px);
+}
+
+.task-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem;
+  background-color: rgba(250, 250, 250, 0.5);
+}
+.task-txt {
+  margin-left: 20px;
+  outline: none;
+}
+.del-btn {
+  cursor: pointer;
+  padding: 0 20px;
+  color: #878787;
+  height: inherit;
+  outline: none;
+}
+.message {
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1170px) {
+  .lists {
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgb(121, 121, 121);
+    }
+  }
+}
+@media screen and (max-width: 1170px) {
+  .container {
+    width: 80%;
+  }
+  .lists {
+    overflow: auto;
+    max-height: 350px;
+  }
+  .add-btn {
+    font-size: small;
+  }
+}
