@@ -120,6 +120,10 @@ body {
 }
 @media screen and (min-width: 1170px) {
   .lists {
+    overflow: auto;
+    max-height: 500px;
+  }
+  .lists {
     &::-webkit-scrollbar {
       width: 5px;
     }
