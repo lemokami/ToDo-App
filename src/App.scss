@@ -148,11 +148,18 @@ body {
   .container {
     width: 80%;
   }
+  form {
+    flex-wrap: wrap;
+  }
   .lists {
     overflow: auto;
     max-height: 350px;
   }
   .add-btn {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: small;
   }
 }

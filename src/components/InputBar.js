@@ -16,7 +16,7 @@ const InputBar = ({ task, setTask, addTask }) => {
         value={task}
         onChange={(e) => setTask(e.target.value)}
       />
-      <button className="add-btn">Add</button>
+      <button className="add-btn">Add to list</button>
     </form>
   );
 };
