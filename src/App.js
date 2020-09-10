@@ -40,6 +40,12 @@ function App() {
         </div>
         <InputBar task={task} setTask={setTask} addTask={addTask} />
       </div>
+      <div className="footer">
+        Developed by{" "}
+        <a href="https://github.com/jesswinw" target="blank">
+          jesswinw
+        </a>
+      </div>
     </div>
   );
 }
