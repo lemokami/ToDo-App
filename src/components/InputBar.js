@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { TodoContext } from "../contexts/TodoContext";
 
-const InputBar = ({ task, setTask, addTask }) => {
+const InputBar = () => {
+  const [task, setTask] = useState("");
+  const { dispatch } = useContext(TodoContext);
   const handleTask = (e) => {
     e.preventDefault();
     if (!task.length || task[0] === " ") return false;
-    addTask();
+    dispatch({ type: "ADD_TODO", content: task });
+    setTask("");
   };
   return (
-    <form className="search" onSubmit={(e) => handleTask(e)}>
+    <form className="search" onSubmit={handleTask}>
       <input
         type="text"
         placeholder="Enter the task..."
