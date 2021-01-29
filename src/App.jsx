@@ -17,8 +17,8 @@ function App() {
         </div>
         <div className="footer">
           Developed by{" "}
-          <a href="https://github.com/jesswinw" target="blank">
-            jesswinw
+          <a href="https://github.com/lemokami" target="blank">
+            lemokami
           </a>
         </div>
       </TodoContextProvider>
